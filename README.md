@@ -25,3 +25,5 @@
 >  > > 如果你要换行的话,新起一行,输入>空格即可,后面不接文字  
 >  
 > > > > 但> 只能放在行首才有效  
+
+ ![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
