@@ -27,3 +27,16 @@
 > > > > 但> 只能放在行首才有效  
 
  ![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+ 
+````js
+import isPlainObject from 'lodash/isPlainObject'
+import $$observable from 'symbol-observable'
+````
+
+````php
+$a = $_POST['a'];
+echo $a;
+function get(){
+  print_r(array('a'=>'A'));
+}
+````
