@@ -26,7 +26,7 @@
 >  
 > > > > 但> 只能放在行首才有效  
 
- ![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+ ![image](https://github.com/sljxiaoxin/helloworld/blob/master/buttons'.jpg)
  
 ````js
 import isPlainObject from 'lodash/isPlainObject'
