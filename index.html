@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="angular.min.js"></script>
+ </HEAD>
+
+ <BODY>
+ <div ng-app="myApp">
+    <div ng-controller="myController">
+		<div>
+            <h2>{{message}}</h2>
+            <input type="text" ng-model="message" />
+        </div>
+    
+		<form name="myForm">
+		<div>
+			<label>Id:
+				<input required="true" type="number" name="myId" ng-model="model.id" /></label>
+		</div>
+		<div>
+			<label>Name:
+				<input type="text" name="myName" ng-model="model.name" ng-minlength="3" ng-maxlength="6" /></label>
+		</div>
+		<div>
+			<label>Email:
+				<input type="email" name="myEmail" ng-model="model.email" /></label>
+		</div>
+		<div>
+			<button type="submit" ng-disabled="myForm.$invalid">Save</button>
+		</div>
+		</form>
+		<li><i>myForm.$valid: {{myForm.$valid}}</i></li>
+		<li><i>myForm.$dirty {{myForm.$dirty}}</i></li>
+		<li><i>myForm.$pristine {{myForm.$pristine}}</i></li>
+		<li><i>myForm.$error {{myForm.$error}}</i></li>
+		
+	</div>
+</div>
+  <script>
+    var app = angular.module("myApp", []);
+
+    app.controller("myController", function ($scope, $http) {
+        $scope.message = "Hello, Angular JS.";
+		$scope.model =  {
+			id : 8,
+			name: "alice",
+			email: "alice@open.com"    
+		};
+    });
+</script>
+ </BODY>
+</HTML>
